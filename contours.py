@@ -19,7 +19,7 @@ while True:
 
         if area>3000:
             print("lenght of contour=%d"%len(contour))        
-            cv2.drawContours(frame,contour,-1,(0,255,0),3)
+            cv2.drawContours(frame,contour,-1,(255,0,0),3)
    
 ##    print("number of contours=%d"%len(contours))
     cv2.imshow("frame",frame)
