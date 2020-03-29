@@ -2,13 +2,19 @@
 Detect and draw contours..for any object of any color
 
 ## 1.colourtrack2.py
-This file is used to find the hsv range of any  color object using trackbars
+This file is used to find the hsv range of any  color object using trackbars.
+First run this code , and adjust the trackbars to find the range of hsv values .
+Once you find the range we can use it further.
 
 ## 2. contours.py
 This file draws a contour of desired colour depending on the area of the contour detected
 
-## 3. 6 color detection try.py
+## 3. color detection try.py
 This  code detects different colors on a rubix cube in real time :
+
+## 4. adjust colors using trackbars
+trackbars to adjust hsv range to detect more precisely because of changing light conditions.
+
 ## few screenshots
 ![2](https://user-images.githubusercontent.com/34301506/47454714-8138bb80-d7ed-11e8-90c1-3ca6ac4f5285.png)
 ![3](https://user-images.githubusercontent.com/34301506/47454733-8eee4100-d7ed-11e8-8b68-870dba369e8c.png)

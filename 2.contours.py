@@ -11,14 +11,12 @@ while True:
     high=np.array([179,255,255])
     mask=cv2.inRange(hsv,low,high)
     blur=cv2.GaussianBlur(mask,(15,15),0)
-    _,contours,_=cv2.findContours(blur,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
+    contours,_=cv2.findContours(blur,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
 
     for contour in contours:
         area=cv2.contourArea(contour)
-##        print (area)
-
+##      print (area)
         if area>3000:
-            print("lenght of contour=%d"%len(contour))        
             cv2.drawContours(frame,contour,-1,(255,0,0),3)
    
 ##    print("number of contours=%d"%len(contours))
